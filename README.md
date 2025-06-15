@@ -1,15 +1,30 @@
+# Moodly - Emotion Detection App 🧠🎵💬
 
-### How to Add This to Your Repository:
-1. In your GitHub repository:
-   - Click "Add file" → "Create new file"
-   - Name it `README.md`
-   - Paste this entire content
-   - Click "Commit new file"
+![Moodly Screenshot](/screenshots/app-preview.png) <!-- Add your screenshot path here -->
 
-### Customization Tips:
-- Replace image paths with your actual demo screenshots
-- Update the live demo link when deployed
-- Add your contact information
-- Include any special setup instructions for your specific model
+Moodly is an interactive web application that detects emotions from facial expressions and provides personalized music recommendations and inspirational quotes based on your mood.
 
-Would you like me to help you create a LICENSE file as well?
+## Features ✨
+
+- **Emotion Detection**: Uses machine learning to analyze facial expressions
+- **Music Recommendations**: Suggests songs matching your current mood
+- **Inspirational Quotes**: Provides uplifting quotes based on detected emotion
+- **Multiple Input Methods**:
+  - Webcam live capture
+  - Image upload
+- **Interactive UI**: Beautiful animations and responsive design
+- **Text-to-Speech**: Reads quotes aloud
+
+## Technologies Used 🛠️
+
+- **Frontend**:
+  - React.js
+  - Framer Motion (for animations)
+  - React-Webcam
+  - Axios (for API calls)
+- **Backend**:
+  - Python Flask (for emotion detection model)
+- **APIs**:
+  - YouTube Data API (for music recommendations)
+  - Web Speech API (for text-to-speech)
+
