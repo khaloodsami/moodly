@@ -1,0 +1,100 @@
+{
+  "happy": {
+    "quotes": {
+      "en": [
+        "Happiness is not by chance, but by choice.",
+        "Smile, it's a free therapy.",
+        "The purpose of our lives is to be happy."
+      ]
+    },
+    "songs": [
+      "Happy - Pharrell Williams",
+      "Best Day of My Life - American Authors",
+      "Walking on Sunshine - Katrina & The Waves"
+    ]
+  },
+  "sad": {
+    "quotes": {
+      "en": [
+        "Tears come from the heart and not from the brain.",
+        "It's okay to cry. It means you care.",
+        "Sometimes, sadness is just rest for the soul."
+      ]
+    },
+    "songs": [
+      "Someone Like You - Adele",
+      "Let Her Go - Passenger",
+      "Fix You - Coldplay"
+    ]
+  },
+  "angry": {
+    "quotes": {
+      "en": [
+        "For every minute you are angry, you lose sixty seconds of happiness.",
+        "Anger doesn’t solve anything. It builds nothing.",
+        "Speak when you are angry and you'll make the best speech you’ll ever regret."
+      ]
+    },
+    "songs": [
+      "Stronger - Kanye West",
+      "Breaking the Habit - Linkin Park",
+      "Numb - Linkin Park"
+    ]
+  },
+  "surprise": {
+    "quotes": {
+      "en": [
+        "Surprise is the greatest gift life can grant us.",
+        "Life is full of surprises, some better than others.",
+        "Expect the unexpected."
+      ]
+    },
+    "songs": [
+      "Can't Stop the Feeling! - Justin Timberlake",
+      "Shake It Off - Taylor Swift",
+      "Firework - Katy Perry"
+    ]
+  },
+  "fear": {
+    "quotes": {
+      "en": [
+        "The only thing we have to fear is fear itself.",
+        "Feel the fear and do it anyway.",
+        "Don't let fear decide your future."
+      ]
+    },
+    "songs": [
+      "Demons - Imagine Dragons",
+      "Everybody's Got to Learn Sometime - Beck",
+      "Boulevard of Broken Dreams - Green Day"
+    ]
+  },
+  "disgust": {
+    "quotes": {
+      "en": [
+        "Every moment is a fresh beginning.",
+        "Even in disgust, there's a lesson to learn.",
+        "Turn your wounds into wisdom."
+      ]
+    },
+    "songs": [
+      "Fix You - Coldplay",
+      "I Will Survive - Gloria Gaynor",
+      "The Climb - Miley Cyrus"
+    ]
+  },
+  "neutral": {
+    "quotes": {
+      "en": [
+        "Calm mind brings inner strength and self-confidence.",
+        "Sometimes, doing nothing is doing everything.",
+        "In stillness, we find clarity."
+      ]
+    },
+    "songs": [
+      "Let It Be - The Beatles",
+      "Somewhere Only We Know - Keane",
+      "Yellow - Coldplay"
+    ]
+  }
+}

@@ -1,0 +1,483 @@
+/* Reset and Base Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/* Background Image Container */
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  filter: brightness(0.6);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* Main App Container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ffffff;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+/* Glassmorphic Card Container */
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  animation: slideUp 0.8s ease;
+  overflow-x: clip;
+}
+
+.glass-card > div {
+  width: 100%;
+}
+
+/* Title */
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  background: linear-gradient(90deg, #00f7ff, #009dff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Mode Toggle */
+.mode-switch {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mode-switch button {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.mode-switch .active {
+  background: linear-gradient(90deg, #00e5ff, #7c4dff);
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Upload & Webcam Modes */
+.upload-mode,
+.webcam-mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeIn 0.5s ease;
+}
+
+input[type="file"] {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  width: 80%;
+  max-width: 320px;
+  cursor: pointer;
+}
+
+button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #00bfa5, #64ffda);
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 191, 165, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 191, 165, 0.5);
+}
+
+button:disabled {
+  background-color: #aaa;
+  color: #555;
+  cursor: not-allowed;
+}
+
+/* Result, Options, Quote */
+.result,
+.options,
+.quote,
+.youtube-player {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.result h2,
+.options h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00e5ff;
+}
+
+.options p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Choice Buttons */
+.choice-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.choice-buttons button {
+  background: linear-gradient(135deg, #651fff, #aa00ff);
+  color: white;
+}
+
+.choice-buttons button:hover {
+  background: linear-gradient(135deg, #7c4dff, #d500f9);
+}
+
+/* Quote Box */
+/* Quote Container */
+/* Quote Container Styles */
+.quote-container {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.quote-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #dbe849, #e9ef35, #e0f003);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.sparkle {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.left-sparkle {
+  top: -15px;
+  left: 20px;
+  animation: floatLeft 4s ease-in-out infinite;
+}
+
+.right-sparkle {
+  bottom: -15px;
+  right: 20px;
+  animation: floatRight 4s ease-in-out infinite 1s;
+}
+
+@keyframes floatLeft {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+@keyframes floatRight {
+  0%,
+  100% {
+    transform: translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: translateY(15px) rotate(-5deg);
+  }
+}
+
+/* Replace your existing .quote-card styles with this: */
+.quote-card {
+  background: transparent; /* Removes background completely */
+  box-shadow: none; /* Removes shadow */
+  border: none; /* Removes border */
+  padding: 1rem 0; /* Adjust padding as needed */
+}
+/* Keep these exactly the same: */
+.cloud-emoji {
+  top: -35px; /* Was -15px, now higher */
+  left: -25px; /* Keep original horizontal position */
+  /* Keep all other properties the same */
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  color: #000; /* Your requested black text */
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem;
+  font-weight: 500;
+}
+/* YouTube Embed */
+.youtube-player {
+  position: relative;
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.youtube-player iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 320px;
+}
+
+/* Close Button */
+.close-video {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.close-video:hover {
+  background-color: #c62828;
+}
+
+/* Webcam Video */
+.webcam-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
+}
+
+.webcam-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.webcam-feed {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.scanner-line-horizontal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #00e5ff, transparent);
+  animation: scanMove 2.5s linear infinite;
+  opacity: 0.6;
+}
+
+.scanner-line-horizontal.delay {
+  animation-delay: 1.25s;
+}
+
+@keyframes scanMove {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .glass-card {
+    padding: 1.4rem;
+  }
+
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .choice-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+.glass-card,
+.youtube-player,
+.quote {
+  will-change: transform, opacity;
+}
+
+/* Add this for smoother animations */
+* {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+/* Add this to your CSS */
+
+/* Add this to your CSS - it will override any existing styles */
+.home-screen p {
+  font-size: 1.5rem !important; /* Force the size change */
+  margin: 0.5rem 0 1.5rem 0 !important; /* Adjust spacing if needed */
+}
+/* Add these to your App.css */
+.options-prompt {
+  color: #57606f;
+  font-size: 1.8rem; /* Increased from previous 1.3rem */
+  font-weight: 600; /* Made slightly bolder */
+  margin-bottom: 1.5rem;
+}
+
+.button-emoji {
+  display: inline-block;
+  font-size: 1.5rem; /* Slightly larger emoji */
+  margin-right: 0.8rem;
+  transform-origin: center bottom;
+}
+
+.bouncy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  /* ... rest of your button styles */
+}
+.youtube-player {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.youtube-player iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.close-video {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: 10;
+  background: #ff4757;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.close-video:hover {
+  transform: scale(1.1) rotate(90deg);
+  background: #ff6b81;
+}
+
